@@ -19,8 +19,6 @@
 	sass = require('gulp-sass'),
 	pleeease = require('gulp-pleeease'),
 	csscomb = require ('gulp-csscomb'),
-	iconfont = require('gulp-iconfont'),
-	iconfontCss = require('gulp-iconfont-css'),
 
 	jshint = require('gulp-jshint'),
 	concat = require('gulp-concat'),
@@ -63,29 +61,12 @@
  	browsersyncOptions = {
 		server: {
 			baseDir: destination,
-			index: 'index.html'
+			index: 'temp-1.html'
 		},
 		open: true,
 		notify: true
 	},
 
-	iconfontName = 'fontName',
-	iconfontcssOptions = {
-		fontName: iconfontName,
-		path: source + 'iconfont/template/_icons.css',
-		targetPath: 'scss/_icons.css',
-		fontPath: 'iconfont/fonts/'
-	},
-
-	iconfontOptions = {
-		fontName: iconfontName,
-		appendCodepoints: true,
-		appendUnicode: false,
-		centerHorizontally: true,
-		formats: ['svg', 'ttf', 'eot', 'woff', 'woff2'],
-		normalize: true,
-		fontHeight: 1001
-	},
 
 /*
  * Source and Destination Assets
@@ -120,10 +101,10 @@
 		in: [source + 'images/*.*', source + 'images/**/*.*'],
 		out: destination + 'images/'
 	},
-	svgs = {
-		in: source + 'svg/**/*.svg',
-		out: source + 'iconfont/'
-	},
+	// svgs = {
+	// 	in: source + 'svg/**/*.svg',
+	// 	out: source + 'iconfont/'
+	// },
 
 	fonts = {
 		in: source + 'fonts/**/*',
@@ -132,7 +113,7 @@
 
 	watch = {
 		html: [source + '*.html', source + 'template/**/*.html'],
-		sass: [source + 'sass/**/*.scss', '!' + imageuri.out + imageuri.filename],
+		sass: [source + 'sass/**/*.scss'],
 		fonts: [source + 'fonts/*'],
 		images: [source + 'images/*.*', source + 'images/**/*.*'],
 		scripts: [source + 'js/*.js', source + 'js/**/*.js']

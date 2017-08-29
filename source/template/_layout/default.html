@@ -1,9 +1,24 @@
-<!doctype html>
-<html lang="en">
-<head>
-    {% include 'template/_core/head.html' %}
-</head>
-<body>
-    {% block content %} {% endblock %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+{% include 'template/_core/head.html' %}
+
+<body style="margin: 0; padding: 0;">
+<!--Outer Table Starts-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+    <tbody>
+        <tr>
+            <td>
+                {% include 'template/_core/header.html' %}
+
+                {% block content %}{% endblock %}
+
+                {% include 'template/_core/footer.html' %}
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!--Outer Table Ends-->
 </body>
 </html>
