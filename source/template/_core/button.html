@@ -1,14 +1,15 @@
 <!--CTA-->
+{% if button.type %}
+{% set buttonWidth = '240px' %}
+{% else %}
+{% set buttonWidth = '180px' %}
+{% endif %}
+
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; max-width: 600px;">
     <tbody>
         <tr>
             <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
             <td align="center">
-                {% if button.type %}
-                    {% set buttonWidth = '240px' %}
-                {% else %}
-                    {% set buttonWidth = '180px' %}
-                {% endif %}
                 <table cellspacing="0" cellpadding="0" border="0" width="{{buttonWidth}}">
                     <tbody>
                         <tr>

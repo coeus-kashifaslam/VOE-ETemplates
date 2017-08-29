@@ -61,7 +61,7 @@
  	browsersyncOptions = {
 		server: {
 			baseDir: destination,
-			index: 'temp-1.html'
+			index: 'index.html'
 		},
 		open: true,
 		notify: true

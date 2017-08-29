@@ -17,9 +17,9 @@
         <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
     </tr>
     <tr>
-        <td style="line-height: 0; font-size: 0;" width="15px" height="40px">&nbsp;</td>
-        <td style="line-height: 0; font-size: 0;" height="40px">&nbsp;</td>
-        <td style="line-height: 0; font-size: 0;" width="15px" height="40px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15px" height="30px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" height="30px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15px" height="30px">&nbsp;</td>
     </tr>
     {% endif %}
 
@@ -33,9 +33,9 @@
     </tr>
 
     <tr>
-        <td style="line-height: 0; font-size: 0;" width="15px" height="40px">&nbsp;</td>
-        <td style="line-height: 0; font-size: 0;" height="40px">&nbsp;</td>
-        <td style="line-height: 0; font-size: 0;" width="15px" height="40px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15px" height="{% if section.title %}20px{% else %}40px{% endif %}">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" height="{% if section.title %}20px{% else %}40px{% endif %}">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15px" height="{% if section.title %}20px{% else %}40px{% endif %}">&nbsp;</td>
     </tr>
     {% endif %}
 
