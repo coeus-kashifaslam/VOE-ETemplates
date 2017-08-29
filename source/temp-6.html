@@ -1,0 +1,61 @@
+{% extends 'template/_layout/default.html' %}
+{% set pageTitle = "Template 6" %}
+
+{% block content %}
+{% set section = {thumbnail:'temp-6.png', thumbnailHeight: '93px'} %}
+{% include 'template/_core/content-header.html' %}
+
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse; max-width: 465px;">
+    <tbody>
+    <tr>
+        <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
+        <td align="center">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="font-family: 'Raleway', Arial, sans-serif;font-size: 14px; line-height: 24px;color:#606060;">
+                            Hi, John Smith
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 0; font-size: 0;" height="30px"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: 'Raleway', Arial, sans-serif;font-size: 14px; line-height: 24px;color:#606060;">
+                            Did you know that it's possible to ask questions to your manage-ment? You can even do so anonymously, if you wish.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 0; font-size: 0;" height="15px"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: 'Raleway', Arial, sans-serif;font-size: 14px; line-height: 24px;color:#606060;">
+                            This is a great opportunity for you to reach out to your managem-ent, and ask questions that are important for you. Not only can you gain valuable insights and answers from your management, but you'll also earn points within VoE.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 0; font-size: 0;" height="15px"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: 'Raleway', Arial, sans-serif;font-size: 14px; line-height: 24px;color:#606060;">
+                            What are you waiting for? Ask those important questions that
+                            have been on your mind!
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 0; font-size: 0;" height="40px"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+
+{% set button = {string: 'Ask Question'} %}
+{% include 'template/_core/button.html' %}
+
+{% include 'template/_core/wave-link.html' %}
+{% endblock %}
