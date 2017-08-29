@@ -8,11 +8,11 @@
         <td style="line-height: 0; font-size: 0;" width="15px" height="30px">&nbsp;</td>
     </tr>
 
-    {% if illustrator.titleString %}
+    {% if section.title %}
     <tr>
         <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
         <td align="center" style="font-family: 'Raleway', Arial, sans-serif;font-size: 18px; line-height: 26px;color: #2DA137;">
-            {{illustrator.titleString}}
+            {{ section.title }}
         </td>
         <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
     </tr>
@@ -23,11 +23,11 @@
     </tr>
     {% endif %}
 
-    {% if illustrator.name %}
+    {% if section.thumbnail %}
     <tr>
         <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
         <td align="center" valign="middle" style="font-family: 'Raleway', Arial, sans-serif;font-size: 18px; line-height: 26px;">
-           <img src="images/illustration/{{illustrator.name}}" alt="Image Not found" style="display: block;max-width: 100%;" height="{{illustrator.height}}">
+           <img src="images/illustration/{{section.thumbnail}}" alt="Image Not found" style="display: block;max-width: 100%;" height="{{section.thumbnailHeight}}">
         </td>
         <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
     </tr>
