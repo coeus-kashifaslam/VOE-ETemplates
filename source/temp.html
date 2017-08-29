@@ -1,0 +1,13 @@
+{% extends 'template/_layout/default.html' %}
+{% set pageTitle = "Temp 1" %}
+
+{% block content %}
+{% set section = {thumbnail:'illustration.png', thumbnailHeight: '93px', title: 'Welcome to VOE'} %}
+{% include 'template/_core/content-header.html' %}
+
+
+{% set button = {string: 'Results'} %}
+{% include 'template/_core/button.html' %}
+
+{% include 'template/_core/wave-link.html' %}
+{% endblock %}
