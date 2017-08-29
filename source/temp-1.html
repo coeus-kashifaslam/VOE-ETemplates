@@ -2,8 +2,7 @@
 {% set pageTitle = "Temp 1" %}
 
 {% block content %}
-{% set illustratorName = 'illustration.png'%}
-{% set illustratorHeight = '93px'%}
+{% set illustrator = {name:'illustration.png', height: '93px', titleString: 'Welcome to VOE'} %}
 {% include 'template/_core/template-illustrator.html' %}
 
 {% include 'template/_core/wave-link.html' %}
