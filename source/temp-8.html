@@ -1,8 +1,8 @@
 {% extends 'template/_layout/default.html' %}
-{% set pageTitle = "Template 9" %}
+{% set pageTitle = "Template 8" %}
 
 {% block content %}
-{% set section = {thumbnail:'temp-9.png', thumbnailHeight: '88px', title: 'Welcome to VOE'} %}
+{% set section = {thumbnail:'temp-8.png', thumbnailHeight: '82px', title: 'Welcome to VOE'} %}
 {% include 'template/_core/content-header.html' %}
 
 
@@ -23,17 +23,8 @@
                     </tr>
                     <tr>
                         <td style="font-family: 'Raleway', Arial, sans-serif;font-size: 14px; line-height: 24px;color:#606060;">
-                            Your manager marked your question as answered.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="line-height: 0; font-size: 0;" height="15px"></td>
-                    </tr>
-                    <tr>
-                        <td style="font-family: 'Raleway', Arial, sans-serif;font-size: 14px; line-height: 24px;color:#606060;">
-                            ”Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam”
+                            Thank you for joining in. If you are curious what other said, you can
+                            view your team's results.
                         </td>
                     </tr>
                     <tr>
@@ -46,6 +37,9 @@
     </tr>
     </tbody>
 </table>
+
+{% set button = {string: 'Results'} %}
+{% include 'template/_core/button.html' %}
 
 {% include 'template/_core/wave-link.html' %}
 {% endblock %}
