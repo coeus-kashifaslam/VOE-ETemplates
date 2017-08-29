@@ -3,39 +3,39 @@
     <tbody>
 
     <tr>
-        <td style="line-height: 0; font-size: 0;" width="15px" height="30px">&nbsp;</td>
-        <td style="line-height: 0; font-size: 0;" height="30px">&nbsp;</td>
-        <td style="line-height: 0; font-size: 0;" width="15px" height="30px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15" height="30">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" height="30">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15" height="30">&nbsp;</td>
     </tr>
 
     {% if section.title %}
     <tr>
-        <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15">&nbsp;</td>
         <td align="center" style="font-family: 'Raleway', Arial, sans-serif;font-size: 18px; line-height: 26px;color: #2DA137;">
             {{ section.title }}
         </td>
-        <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15">&nbsp;</td>
     </tr>
     <tr>
-        <td style="line-height: 0; font-size: 0;" width="15px" height="30px">&nbsp;</td>
-        <td style="line-height: 0; font-size: 0;" height="30px">&nbsp;</td>
-        <td style="line-height: 0; font-size: 0;" width="15px" height="30px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15" height="30">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" height="30">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15" height="30">&nbsp;</td>
     </tr>
     {% endif %}
 
     {% if section.thumbnail %}
     <tr>
-        <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15">&nbsp;</td>
         <td align="center" valign="middle" style="font-family: 'Raleway', Arial, sans-serif;font-size: 18px; line-height: 26px;">
            <img src="images/illustration/{{section.thumbnail}}" alt="Image Not found" style="display: block;max-width: 100%;" height="{{section.thumbnailHeight}}">
         </td>
-        <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15">&nbsp;</td>
     </tr>
 
     <tr>
-        <td style="line-height: 0; font-size: 0;" width="15px" height="{% if section.title %}25px{% else %}40px{% endif %}">&nbsp;</td>
-        <td style="line-height: 0; font-size: 0;" height="{% if section.title %}25px{% else %}40px{% endif %}">&nbsp;</td>
-        <td style="line-height: 0; font-size: 0;" width="15px" height="{% if section.title %}25px{% else %}40px{% endif %}">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15" height="{% if section.title %}25{% else %}40{% endif %}">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" height="{% if section.title %}25{% else %}40{% endif %}">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15" height="{% if section.title %}25{% else %}40{% endif %}">&nbsp;</td>
     </tr>
     {% endif %}
 
