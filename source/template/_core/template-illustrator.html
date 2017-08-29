@@ -1,0 +1,44 @@
+<!--Template Illustration-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; max-width: 600px;">
+    <tbody>
+
+    <tr>
+        <td style="line-height: 0; font-size: 0;" width="15px" height="30px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" height="30px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15px" height="30px">&nbsp;</td>
+    </tr>
+
+    {% if illustrator.titleString %}
+    <tr>
+        <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
+        <td align="center" style="font-family: 'Raleway', Arial, sans-serif;font-size: 18px; line-height: 26px;color: #2DA137;">
+            {{illustrator.titleString}}
+        </td>
+        <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="line-height: 0; font-size: 0;" width="15px" height="40px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" height="40px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15px" height="40px">&nbsp;</td>
+    </tr>
+    {% endif %}
+
+    {% if illustrator.name %}
+    <tr>
+        <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
+        <td align="center" valign="middle" style="font-family: 'Raleway', Arial, sans-serif;font-size: 18px; line-height: 26px;">
+           <img src="images/illustration/{{illustrator.name}}" alt="Image Not found" style="display: block;max-width: 100%;" height="{{illustrator.height}}">
+        </td>
+        <td style="line-height: 0; font-size: 0;" width="15px">&nbsp;</td>
+    </tr>
+
+    <tr>
+        <td style="line-height: 0; font-size: 0;" width="15px" height="40px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" height="40px">&nbsp;</td>
+        <td style="line-height: 0; font-size: 0;" width="15px" height="40px">&nbsp;</td>
+    </tr>
+    {% endif %}
+
+    </tbody>
+</table>
+<!--/.Template Illustration-->
