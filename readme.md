@@ -9,7 +9,7 @@
 **3:** Install ruby gem compass (https://rubygems.org/search?utf8=%E2%9C%93&query=compass)
 Command => ruby install compass
 
-**4:** Now install Bower (https://bower.io/)
+**4:** Now install Bower` (https://bower.io/)
 Command => npm install -g bower
 
 **5:** Now install npm dependencies

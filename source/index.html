@@ -2,7 +2,7 @@
 {% set pageTitle = "Template Index" %}
 
 {% block content %}
-{% set section = {thumbnail:'illustration.png', thumbnailHeight: '93px', title: 'Welcome to VOE'} %}
+{% set section = {thumbnail:'illustration.png', thumbnailHeight: '93px', title: 'Welcome to Team Name'} %}
 {% include 'template/_core/content-header.html' %}
 <!--The VOE TEAM Link-->
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; max-width: 600px;">
@@ -33,8 +33,9 @@
 </table>
 <!--The VOE TEAM Link-->
 
-{% set button = {string: 'Results'} %}
+{% set button = {string: 'Call to Action'} %}
 {% include 'template/_core/button.html' %}
 
+{% set reference = {string: 'Wave Link String'} %}
 {% include 'template/_core/wave-link.html' %}
 {% endblock %}
