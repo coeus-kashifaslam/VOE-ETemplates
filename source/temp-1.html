@@ -1,0 +1,76 @@
+{% extends 'template/_layout/default.html' %}
+{% set pageTitle = "Template 1A" %}
+
+{% block content %}
+{% set section = {thumbnail:'temp-1.png', thumbnailHeight: '80', title: 'Welcome to VOE'} %}
+{% include 'template/_core/content-header.html' %}
+
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse; max-width: 465px;">
+    <tbody>
+    <tr>
+        <td style="line-height: 0; font-size: 0;" width="15">&nbsp;</td>
+        <td align="center">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="font-family: 'Raleway', Arial, sans-serif;font-size: 14px; line-height: 24px;color:#606060;">
+                            Hi, John Smith
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 0; font-size: 0;" height="30"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: 'Raleway', Arial, sans-serif;font-size: 14px; line-height: 24px;color:#606060;">
+                            You've been invited by Rick to join his Mobile team within Addidas.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 0; font-size: 0;" height="15"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-family: 'Raleway', Arial, sans-serif;font-size: 14px; line-height: 24px;color:#606060;">
+                            Your login credentials for Voice of Employees are as follows
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="line-height: 0; font-size: 0;" height="40"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td style="line-height: 0; font-size: 0;" width="15">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+
+{% include 'template/_core/login.html' %}
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse; max-width: 465px;">
+    <tbody>
+    <tr>
+        <td style="line-height: 0; font-size: 0;" width="15">&nbsp;</td>
+        <td align="center">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%"  style="border-collapse: collapse;">
+                <tbody>
+                <tr>
+                    <td align="center" style="font-family: 'Raleway', Arial, sans-serif;font-size: 14px; line-height: 24px;color:#606060;">
+                        Simply download the application or access it via the web, enter your credentials and click on <strong>‘Login’</strong>.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="line-height: 0; font-size: 0;" height="40"></td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+        <td style="line-height: 0; font-size: 0;" width="15">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+
+{% include 'template/_core/app-links.html' %}
+
+{% include 'template/_core/wave-link.html' %}
+{% endblock %}
